@@ -1,0 +1,104 @@
+body {
+    font-family: 'Jua', sans-serif;
+    color: rgb(53, 55, 69);
+    background-color: rgb(255, 255, 173);
+}
+
+h1 {
+    top: 1vh;
+    font-size: 4vw;
+    font-family: 'Days One',sans-serif;
+    text-align: center;
+    color:rgb(195, 166, 97)
+}
+
+.info {
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+}
+
+.pan {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    transform: rotateY(180deg);
+    width: 40vw;
+}
+
+.pan-full {
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+}
+
+.pan-container:hover .pan-full {
+    opacity: 1;
+}
+
+.chef {
+    position: absolute;
+    right: 5vw;
+    width: 30vw;
+}
+
+.speech-bubble {
+    position: absolute;
+    top: 15vh;
+    right: 27vw;
+    width: 15vw;
+    transform: rotateZ(-20deg);
+    text-align: center;
+}
+
+.bubble-img {
+    width: 100%;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: 2.5vw;
+    font-family: 'Jua', sans-serif;
+}
+
+@media(max-width: 768px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    .pan {
+        width: 80vw;
+        top: 65vh;
+    }
+
+    .pan-full {
+        opacity: 1;
+    }
+
+    .chef {
+        width: 60vw;
+        top: 22vh;
+        right: 5vw;
+    }
+
+    .speech-bubble {
+        top: 17vh;
+        left: 7vh;
+        width: 35vw;
+    }
+
+    .bubble-text {
+        font-size: 6vw;
+    }
+
+    .info {
+        font-size: 4vw;
+    }
+}
